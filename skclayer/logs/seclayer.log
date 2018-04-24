@@ -1,0 +1,1088 @@
+2018/04/24 15:19:37.748 [I] init logger success!!!
+2018/04/24 15:19:37.748 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:19:37.766 [D] init redis success!!
+2018/04/24 15:19:37.770 [D] init ectd success!!
+2018/04/24 15:19:37.770 [D] start from etcd read data
+2018/04/24 15:19:37.772 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:19:37.772 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:19:37.772 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:19:37.773 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421fa410 3000:0xc0421fa3c0]
+2018/04/24 15:19:37.773 [D] update  sec product info success
+2018/04/24 15:19:37.773 [D] init etcd watch success!!!
+2018/04/24 15:19:37.773 [D] init product success!!
+2018/04/24 15:19:37.780 [D] init all success!
+2018/04/24 15:19:37.780 [D] init layer succss
+2018/04/24 15:19:37.781 [D] handle user running
+2018/04/24 15:19:37.781 [D] read goroutine running
+2018/04/24 15:19:37.781 [D] read goroutine running
+2018/04/24 15:19:37.781 [D] handle write running
+2018/04/24 15:19:37.782 [D] handle user running
+2018/04/24 15:19:37.782 [D] handle user running
+2018/04/24 15:19:37.782 [D] handle user running
+2018/04/24 15:19:37.782 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.805 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] handle user running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] handle write running
+2018/04/24 15:19:37.783 [D] read goroutine running
+2018/04/24 15:19:40.189 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:19:40.0768513+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:19:40.190 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:19:40.0768513 +0800 CST [ }
+2018/04/24 15:19:40.190 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:19:40.0768513 +0800 CST [ }
+2018/04/24 15:19:44.352 [D] secLayerContext.Handle2WriteChan &{2000 3232 ec9f00f2928d02f2d827c098d61e7c76 1524554380 1002}
+2018/04/24 15:19:44.352 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"ec9f00f2928d02f2d827c098d61e7c76","token_time":1524554380,"code":1002}
+2018/04/24 15:21:13.306 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:21:13.2914198+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:21:13.306 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:21:13.2914198 +0800 CST [ }
+2018/04/24 15:21:13.307 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:21:13.2914198 +0800 CST [ }
+2018/04/24 15:21:13.307 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:21:13.307 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:23:19.605 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:23:19.5936817+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:23:19.606 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:23:19.5936817 +0800 CST [ }
+2018/04/24 15:23:19.606 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:23:19.5936817 +0800 CST [ }
+2018/04/24 15:23:19.606 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:23:19.606 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:25:44.177 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:25:44.1739484+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:25:44.177 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:25:44.1739484 +0800 CST [ }
+2018/04/24 15:25:44.177 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:25:44.1739484 +0800 CST [ }
+2018/04/24 15:25:44.177 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:25:44.177 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:26:41.289 [I] init logger success!!!
+2018/04/24 15:26:41.289 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:26:41.296 [D] init redis success!!
+2018/04/24 15:26:41.299 [D] init ectd success!!
+2018/04/24 15:26:41.299 [D] start from etcd read data
+2018/04/24 15:26:41.300 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:26:41.300 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:26:41.300 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:26:41.300 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421ee2d0 3000:0xc0421ee280]
+2018/04/24 15:26:41.300 [D] update  sec product info success
+2018/04/24 15:26:41.300 [D] init etcd watch success!!!
+2018/04/24 15:26:41.300 [D] init product success!!
+2018/04/24 15:26:41.305 [D] init all success!
+2018/04/24 15:26:41.305 [D] init layer succss
+2018/04/24 15:26:41.305 [D] handle user running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.305 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] handle user running
+2018/04/24 15:26:41.305 [D] handle user running
+2018/04/24 15:26:41.305 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] read goroutine running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.308 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle user running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.305 [D] read goroutine running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:41.307 [D] handle write running
+2018/04/24 15:26:44.819 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:26:44.8153034+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:26:44.820 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:26:44.8153034 +0800 CST [ }
+2018/04/24 15:26:44.820 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:26:44.8153034 +0800 CST [ }
+2018/04/24 15:26:44.822 [D] secLayerContext.Handle2WriteChan &{2000 3232 f0afeaf4085930a4203f168f2a6e72fa 1524554804 1002}
+2018/04/24 15:26:44.822 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"f0afeaf4085930a4203f168f2a6e72fa","token_time":1524554804,"code":1002}
+2018/04/24 15:27:22.640 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:27:16.8518883+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:27:22.640 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:27:16.8518883 +0800 CST [ }
+2018/04/24 15:27:22.641 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:27:16.8518883 +0800 CST [ }
+2018/04/24 15:27:22.641 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:27:22.642 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:28:36.039 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:28:29.65109+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:28:36.039 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:28:29.65109 +0800 CST [ }
+2018/04/24 15:28:36.039 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:28:29.65109 +0800 CST [ }
+2018/04/24 15:28:36.039 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:28:36.039 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:30:22.121 [I] init logger success!!!
+2018/04/24 15:30:22.121 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:30:22.128 [D] init redis success!!
+2018/04/24 15:30:22.132 [D] init ectd success!!
+2018/04/24 15:30:22.132 [D] start from etcd read data
+2018/04/24 15:30:22.133 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:30:22.133 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:30:22.133 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:30:22.133 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[3000:0xc0421d83c0 2000:0xc0421d8410]
+2018/04/24 15:30:22.133 [D] update  sec product info success
+2018/04/24 15:30:22.133 [D] init etcd watch success!!!
+2018/04/24 15:30:22.133 [D] init product success!!
+2018/04/24 15:30:22.138 [D] init all success!
+2018/04/24 15:30:22.138 [D] init layer succss
+2018/04/24 15:30:22.138 [D] read goroutine running
+2018/04/24 15:30:22.138 [D] read goroutine running
+2018/04/24 15:30:22.138 [D] read goroutine running
+2018/04/24 15:30:22.139 [D] handle write running
+2018/04/24 15:30:22.139 [D] read goroutine running
+2018/04/24 15:30:22.140 [D] read goroutine running
+2018/04/24 15:30:22.140 [D] handle user running
+2018/04/24 15:30:22.140 [D] read goroutine running
+2018/04/24 15:30:22.140 [D] read goroutine running
+2018/04/24 15:30:22.141 [D] read goroutine running
+2018/04/24 15:30:22.142 [D] handle user running
+2018/04/24 15:30:22.142 [D] handle user running
+2018/04/24 15:30:22.142 [D] handle user running
+2018/04/24 15:30:22.142 [D] handle user running
+2018/04/24 15:30:22.142 [D] handle user running
+2018/04/24 15:30:22.142 [D] handle user running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.142 [D] handle write running
+2018/04/24 15:30:22.143 [D] read goroutine running
+2018/04/24 15:30:22.144 [D] read goroutine running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] read goroutine running
+2018/04/24 15:30:22.145 [D] read goroutine running
+2018/04/24 15:30:22.144 [D] read goroutine running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.144 [D] handle user running
+2018/04/24 15:30:22.145 [D] handle user running
+2018/04/24 15:30:22.145 [D] read goroutine running
+2018/04/24 15:30:22.144 [D] read goroutine running
+2018/04/24 15:30:22.144 [D] read goroutine running
+2018/04/24 15:30:33.841 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:30:33.8363244+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:30:33.842 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:30:33.8363244 +0800 CST [ }
+2018/04/24 15:30:33.842 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:30:33.8363244 +0800 CST [ }
+2018/04/24 15:30:43.046 [D] secLayerContext.Handle2WriteChan &{2000 3232 89e9470a564b992d98854a760a96ffcb 1524555033 1002}
+2018/04/24 15:30:43.046 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"89e9470a564b992d98854a760a96ffcb","token_time":1524555033,"code":1002}
+2018/04/24 15:31:29.485 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:31:29.4776905+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:31:29.485 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:31:29.4776905 +0800 CST [ }
+2018/04/24 15:31:29.485 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:31:29.4776905 +0800 CST [ }
+2018/04/24 15:31:29.486 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:31:29.486 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:32:23.282 [I] init logger success!!!
+2018/04/24 15:32:23.284 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:32:23.290 [D] init redis success!!
+2018/04/24 15:32:23.293 [D] init ectd success!!
+2018/04/24 15:32:23.293 [D] start from etcd read data
+2018/04/24 15:32:23.294 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:32:23.294 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:32:23.294 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:32:23.294 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[3000:0xc0421fc280 2000:0xc0421fc2d0]
+2018/04/24 15:32:23.294 [D] update  sec product info success
+2018/04/24 15:32:23.294 [D] init etcd watch success!!!
+2018/04/24 15:32:23.294 [D] init product success!!
+2018/04/24 15:32:23.299 [D] init all success!
+2018/04/24 15:32:23.299 [D] init layer succss
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] handle user running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] read goroutine running
+2018/04/24 15:32:23.300 [D] handle write running
+2018/04/24 15:32:56.849 [I] init logger success!!!
+2018/04/24 15:32:56.849 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:32:56.857 [D] init redis success!!
+2018/04/24 15:32:56.860 [D] init ectd success!!
+2018/04/24 15:32:56.860 [D] start from etcd read data
+2018/04/24 15:32:56.861 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:32:56.861 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:32:56.861 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:32:56.861 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc04206ea00 3000:0xc04206e9b0]
+2018/04/24 15:32:56.862 [D] update  sec product info success
+2018/04/24 15:32:56.862 [D] init etcd watch success!!!
+2018/04/24 15:32:56.862 [D] init product success!!
+2018/04/24 15:32:56.868 [D] init all success!
+2018/04/24 15:32:56.868 [D] init layer succss
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] handle write running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] handle write running
+2018/04/24 15:32:56.868 [D] handle write running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle user running
+2018/04/24 15:32:56.869 [D] read goroutine running
+2018/04/24 15:32:56.870 [D] handle user running
+2018/04/24 15:32:56.870 [D] handle user running
+2018/04/24 15:32:56.870 [D] handle user running
+2018/04/24 15:32:56.870 [D] handle user running
+2018/04/24 15:32:56.868 [D] handle write running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.872 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] handle user running
+2018/04/24 15:32:56.868 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.869 [D] handle write running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.875 [D] handle user running
+2018/04/24 15:32:56.876 [D] handle user running
+2018/04/24 15:32:56.868 [D] handle write running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:32:56.868 [D] read goroutine running
+2018/04/24 15:33:07.304 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:33:07.296893+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:33:07.305 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:33:07.296893 +0800 CST [ }
+2018/04/24 15:33:07.305 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:33:07.296893 +0800 CST [ }
+2018/04/24 15:33:07.307 [D] secLayerContext.Handle2WriteChan &{2000 3232 fa54adb20c5c227aa25b6a11e2aa86e9 1524555187 1002}
+2018/04/24 15:33:07.307 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"fa54adb20c5c227aa25b6a11e2aa86e9","token_time":1524555187,"code":1002}
+2018/04/24 15:36:57.472 [I] init logger success!!!
+2018/04/24 15:36:57.472 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:36:57.488 [D] init redis success!!
+2018/04/24 15:36:57.494 [D] init ectd success!!
+2018/04/24 15:36:57.494 [D] start from etcd read data
+2018/04/24 15:36:57.496 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:36:57.496 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:36:57.496 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:36:57.496 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421b4410 3000:0xc0421b43c0]
+2018/04/24 15:36:57.497 [D] update  sec product info success
+2018/04/24 15:36:57.497 [D] init etcd watch success!!!
+2018/04/24 15:36:57.497 [D] init product success!!
+2018/04/24 15:36:57.503 [D] init all success!
+2018/04/24 15:36:57.503 [D] init layer succss
+2018/04/24 15:36:57.503 [D] read goroutine running
+2018/04/24 15:36:57.503 [D] handle write running
+2018/04/24 15:36:57.503 [D] read goroutine running
+2018/04/24 15:36:57.503 [D] read goroutine running
+2018/04/24 15:36:57.503 [D] handle user running
+2018/04/24 15:36:57.504 [D] read goroutine running
+2018/04/24 15:36:57.505 [D] handle user running
+2018/04/24 15:36:57.505 [D] handle user running
+2018/04/24 15:36:57.505 [D] read goroutine running
+2018/04/24 15:36:57.505 [D] handle user running
+2018/04/24 15:36:57.505 [D] handle user running
+2018/04/24 15:36:57.506 [D] handle write running
+2018/04/24 15:36:57.506 [D] handle write running
+2018/04/24 15:36:57.506 [D] handle write running
+2018/04/24 15:36:57.506 [D] handle write running
+2018/04/24 15:36:57.506 [D] read goroutine running
+2018/04/24 15:36:57.507 [D] read goroutine running
+2018/04/24 15:36:57.508 [D] read goroutine running
+2018/04/24 15:36:57.509 [D] handle write running
+2018/04/24 15:36:57.510 [D] handle write running
+2018/04/24 15:36:57.508 [D] read goroutine running
+2018/04/24 15:36:57.506 [D] handle write running
+2018/04/24 15:36:57.508 [D] read goroutine running
+2018/04/24 15:36:57.508 [D] read goroutine running
+2018/04/24 15:36:57.506 [D] handle write running
+2018/04/24 15:36:57.509 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle write running
+2018/04/24 15:36:57.510 [D] handle write running
+2018/04/24 15:36:57.510 [D] handle write running
+2018/04/24 15:36:57.510 [D] handle write running
+2018/04/24 15:36:57.510 [D] handle write running
+2018/04/24 15:36:57.507 [D] handle write running
+2018/04/24 15:36:57.510 [D] read goroutine running
+2018/04/24 15:36:57.510 [D] read goroutine running
+2018/04/24 15:36:57.510 [D] read goroutine running
+2018/04/24 15:36:57.510 [D] read goroutine running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.505 [D] handle user running
+2018/04/24 15:36:57.508 [D] read goroutine running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.510 [D] handle user running
+2018/04/24 15:36:57.507 [D] handle write running
+2018/04/24 15:37:10.917 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:37:10.9087189+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:37:10.917 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:37:10.9087189 +0800 CST [ }
+2018/04/24 15:37:10.918 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:37:10.9087189 +0800 CST [ }
+2018/04/24 15:37:19.530 [D] secLayerContext.Handle2WriteChan &{2000 3232 59fd408d7d0f24283e0faf12631f5a08 1524555430 1002}
+2018/04/24 15:37:19.531 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"59fd408d7d0f24283e0faf12631f5a08","token_time":1524555430,"code":1002}
+2018/04/24 15:38:24.724 [I] init logger success!!!
+2018/04/24 15:38:24.725 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:38:24.731 [D] init redis success!!
+2018/04/24 15:38:24.734 [D] init ectd success!!
+2018/04/24 15:38:24.734 [D] start from etcd read data
+2018/04/24 15:38:24.735 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:38:24.735 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:38:24.735 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:38:24.735 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421ec2d0 3000:0xc0421ec280]
+2018/04/24 15:38:24.735 [D] update  sec product info success
+2018/04/24 15:38:24.735 [D] init etcd watch success!!!
+2018/04/24 15:38:24.735 [D] init product success!!
+2018/04/24 15:38:24.740 [D] init all success!
+2018/04/24 15:38:24.740 [D] init layer succss
+2018/04/24 15:38:24.740 [D] read goroutine running
+2018/04/24 15:38:24.740 [D] read goroutine running
+2018/04/24 15:38:24.742 [D] handle write running
+2018/04/24 15:38:24.742 [D] read goroutine running
+2018/04/24 15:38:24.743 [D] handle user running
+2018/04/24 15:38:24.743 [D] read goroutine running
+2018/04/24 15:38:24.743 [D] read goroutine running
+2018/04/24 15:38:24.743 [D] handle user running
+2018/04/24 15:38:24.743 [D] handle user running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] handle write running
+2018/04/24 15:38:24.744 [D] read goroutine running
+2018/04/24 15:38:24.744 [D] handle user running
+2018/04/24 15:38:24.745 [D] read goroutine running
+2018/04/24 15:38:24.745 [D] read goroutine running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.746 [D] handle user running
+2018/04/24 15:38:24.747 [D] handle user running
+2018/04/24 15:38:24.747 [D] handle user running
+2018/04/24 15:38:24.747 [D] handle user running
+2018/04/24 15:38:24.747 [D] handle user running
+2018/04/24 15:38:24.747 [D] handle user running
+2018/04/24 15:38:24.747 [D] read goroutine running
+2018/04/24 15:38:24.747 [D] read goroutine running
+2018/04/24 15:38:24.748 [D] read goroutine running
+2018/04/24 15:38:24.748 [D] read goroutine running
+2018/04/24 15:38:24.750 [D] read goroutine running
+2018/04/24 15:38:24.751 [D] read goroutine running
+2018/04/24 15:38:24.750 [D] read goroutine running
+2018/04/24 15:38:24.751 [D] read goroutine running
+2018/04/24 15:38:39.056 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:38:28.6700523+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:38:39.057 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:38:28.6700523 +0800 CST [ }
+2018/04/24 15:38:39.057 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:38:28.6700523 +0800 CST [ }
+2018/04/24 15:38:39.057 [D] secLayerContext.Handle2WriteChan &{2000 3232 e8a19123720b706fad66c06f67ae17f7 1524555519 1002}
+2018/04/24 15:38:39.057 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"e8a19123720b706fad66c06f67ae17f7","token_time":1524555519,"code":1002}
+2018/04/24 15:38:55.325 [I] init logger success!!!
+2018/04/24 15:38:55.325 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:38:55.332 [D] init redis success!!
+2018/04/24 15:38:55.335 [D] init ectd success!!
+2018/04/24 15:38:55.335 [D] start from etcd read data
+2018/04/24 15:38:55.336 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:38:55.336 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:38:55.336 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:38:55.336 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421d24b0 3000:0xc0421d2460]
+2018/04/24 15:38:55.336 [D] update  sec product info success
+2018/04/24 15:38:55.336 [D] init etcd watch success!!!
+2018/04/24 15:38:55.336 [D] init product success!!
+2018/04/24 15:38:55.341 [D] init all success!
+2018/04/24 15:38:55.341 [D] init layer succss
+2018/04/24 15:38:55.341 [D] handle write running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] read goroutine running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle user running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:38:55.342 [D] handle write running
+2018/04/24 15:39:02.981 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:39:02.9759563+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:39:02.981 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:39:02.9759563 +0800 CST [ }
+2018/04/24 15:39:02.981 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:39:02.9759563 +0800 CST [ }
+2018/04/24 15:39:02.983 [D] secLayerContext.Handle2WriteChan &{2000 3232 23f157f5f3c4a496d65b647463c624d5 1524555542 1002}
+2018/04/24 15:39:02.983 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"23f157f5f3c4a496d65b647463c624d5","token_time":1524555542,"code":1002}
+2018/04/24 15:40:26.271 [I] init logger success!!!
+2018/04/24 15:40:26.271 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:40:26.278 [D] init redis success!!
+2018/04/24 15:40:26.281 [D] init ectd success!!
+2018/04/24 15:40:26.281 [D] start from etcd read data
+2018/04/24 15:40:26.282 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:40:26.282 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:40:26.282 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:40:26.283 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[3000:0xc0421b4460 2000:0xc0421b44b0]
+2018/04/24 15:40:26.283 [D] update  sec product info success
+2018/04/24 15:40:26.283 [D] init etcd watch success!!!
+2018/04/24 15:40:26.283 [D] init product success!!
+2018/04/24 15:40:26.287 [D] init all success!
+2018/04/24 15:40:26.287 [D] init layer succss
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.289 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:40:20.9341708+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.289 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:40:20.9341708 +0800 CST [ }
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle user running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] read goroutine running
+2018/04/24 15:40:26.288 [D] handle write running
+2018/04/24 15:40:26.295 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:40:20.9341708 +0800 CST [ }
+2018/04/24 15:40:26.302 [D] secLayerContext.Handle2WriteChan &{2000 3232 fa3906d59eb30cfdd5207275fb3cbee0 1524555626 1002}
+2018/04/24 15:40:26.302 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"fa3906d59eb30cfdd5207275fb3cbee0","token_time":1524555626,"code":1002}
+2018/04/24 15:43:44.691 [I] init logger success!!!
+2018/04/24 15:43:44.692 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:43:44.699 [D] init redis success!!
+2018/04/24 15:43:44.702 [D] init ectd success!!
+2018/04/24 15:43:44.702 [D] start from etcd read data
+2018/04/24 15:43:44.703 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:43:44.703 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:43:44.703 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:43:44.703 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0422282d0 3000:0xc042228280]
+2018/04/24 15:43:44.703 [D] update  sec product info success
+2018/04/24 15:43:44.703 [D] init etcd watch success!!!
+2018/04/24 15:43:44.703 [D] init product success!!
+2018/04/24 15:43:44.708 [D] init all success!
+2018/04/24 15:43:44.709 [D] init layer succss
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] handle write running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.721 [D] handle write running
+2018/04/24 15:43:44.721 [D] handle write running
+2018/04/24 15:43:44.721 [D] handle write running
+2018/04/24 15:43:44.721 [D] handle write running
+2018/04/24 15:43:44.721 [D] handle write running
+2018/04/24 15:43:44.721 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] handle write running
+2018/04/24 15:43:44.710 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] handle write running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] read goroutine running
+2018/04/24 15:43:44.709 [D] handle user running
+2018/04/24 15:43:44.710 [D] read goroutine running
+2018/04/24 15:43:44.710 [D] read goroutine running
+2018/04/24 15:43:53.465 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:43:53.4576372+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:43:53.466 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:43:53.4576372 +0800 CST [ }
+2018/04/24 15:43:53.466 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:43:53.4576372 +0800 CST [ }
+2018/04/24 15:43:53.467 [D] secLayerContext.Handle2WriteChan &{2000 3232 fb265315cdb299a94d8eca88e46ddbec 1524555833 1002}
+2018/04/24 15:43:53.467 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"fb265315cdb299a94d8eca88e46ddbec","token_time":1524555833,"code":1002}
+2018/04/24 15:45:06.560 [I] init logger success!!!
+2018/04/24 15:45:06.561 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:45:06.568 [D] init redis success!!
+2018/04/24 15:45:06.570 [D] init ectd success!!
+2018/04/24 15:45:06.570 [D] start from etcd read data
+2018/04/24 15:45:06.571 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:45:06.571 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:45:06.571 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:45:06.571 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421a6320 3000:0xc0421a62d0]
+2018/04/24 15:45:06.571 [D] update  sec product info success
+2018/04/24 15:45:06.571 [D] init etcd watch success!!!
+2018/04/24 15:45:06.572 [D] init product success!!
+2018/04/24 15:45:06.576 [D] init all success!
+2018/04/24 15:45:06.576 [D] init layer succss
+2018/04/24 15:45:06.576 [D] read goroutine running
+2018/04/24 15:45:06.577 [D] read goroutine running
+2018/04/24 15:45:06.577 [D] read goroutine running
+2018/04/24 15:45:06.577 [D] read goroutine running
+2018/04/24 15:45:06.577 [D] handle write running
+2018/04/24 15:45:06.578 [D] handle write running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.579 [D] handle write running
+2018/04/24 15:45:06.577 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] handle write running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle write running
+2018/04/24 15:45:06.578 [D] handle write running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:06.578 [D] handle user running
+2018/04/24 15:45:06.578 [D] handle write running
+2018/04/24 15:45:06.578 [D] handle write running
+2018/04/24 15:45:06.578 [D] read goroutine running
+2018/04/24 15:45:08.788 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:45:08.7773315+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:45:08.788 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:45:08.7773315 +0800 CST [ }
+2018/04/24 15:45:08.789 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:45:08.7773315 +0800 CST [ }
+2018/04/24 15:45:08.791 [D] secLayerContext.Handle2WriteChan &{2000 3232 9251bc6ce355a16865df6d491bd1b9e1 1524555908 1002}
+2018/04/24 15:45:08.791 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"9251bc6ce355a16865df6d491bd1b9e1","token_time":1524555908,"code":1002}
+2018/04/24 15:47:36.313 [I] init logger success!!!
+2018/04/24 15:47:36.314 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:47:36.321 [D] init redis success!!
+2018/04/24 15:47:36.324 [D] init ectd success!!
+2018/04/24 15:47:36.324 [D] start from etcd read data
+2018/04/24 15:47:36.324 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:47:36.324 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:47:36.325 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:47:36.325 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc04207ca00 3000:0xc04207c9b0]
+2018/04/24 15:47:36.325 [D] update  sec product info success
+2018/04/24 15:47:36.325 [D] init etcd watch success!!!
+2018/04/24 15:47:36.325 [D] init product success!!
+2018/04/24 15:47:36.329 [D] init all success!
+2018/04/24 15:47:36.329 [D] init layer succss
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] handle write running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.331 [D] handle write running
+2018/04/24 15:47:36.331 [D] handle write running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.331 [D] handle write running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle user running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.332 [D] handle write running
+2018/04/24 15:47:36.333 [D] handle write running
+2018/04/24 15:47:36.333 [D] handle write running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.333 [D] handle write running
+2018/04/24 15:47:36.330 [D] read goroutine running
+2018/04/24 15:47:36.331 [D] handle write running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:47:36.331 [D] handle user running
+2018/04/24 15:48:06.801 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:48:06.792397+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:48:06.801 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:48:06.792397 +0800 CST [ }
+2018/04/24 15:48:06.801 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:48:06.792397 +0800 CST [ }
+2018/04/24 15:48:06.801 [D] secLayerContext.Handle2WriteChan &{2000 3232 17c2339e799ed985d3ea5258470a15ae 1524556086 1002}
+2018/04/24 15:48:06.801 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"17c2339e799ed985d3ea5258470a15ae","token_time":1524556086,"code":1002}
+2018/04/24 15:48:17.750 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:48:17.7469789+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:48:17.750 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:48:17.7469789 +0800 CST [ }
+2018/04/24 15:48:17.750 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:48:17.7469789 +0800 CST [ }
+2018/04/24 15:48:17.750 [D] secLayerContext.Handle2WriteChan &{0 0  0 1006}
+2018/04/24 15:48:17.750 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1006}
+2018/04/24 15:48:30.824 [I] init logger success!!!
+2018/04/24 15:48:30.824 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:48:30.830 [D] init redis success!!
+2018/04/24 15:48:30.833 [D] init ectd success!!
+2018/04/24 15:48:30.833 [D] start from etcd read data
+2018/04/24 15:48:30.834 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1106 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:48:30.834 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1106 version:33 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524553983,\"end_time\":3029566383,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.9,\"sold_max_limit\":100}]" ]
+2018/04/24 15:48:30.834 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524553983 3029566383 0 2000 1000 1 0.9 100 <nil>}]]
+2018/04/24 15:48:30.834 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0422202d0 3000:0xc042220280]
+2018/04/24 15:48:30.834 [D] update  sec product info success
+2018/04/24 15:48:30.834 [D] init etcd watch success!!!
+2018/04/24 15:48:30.834 [D] init product success!!
+2018/04/24 15:48:30.839 [D] init all success!
+2018/04/24 15:48:30.839 [D] init layer succss
+2018/04/24 15:48:30.839 [D] handle user running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] handle user running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] handle write running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle user running
+2018/04/24 15:48:30.840 [D] handle write running
+2018/04/24 15:48:30.839 [D] read goroutine running
+2018/04/24 15:48:30.851 [D] handle write running
+2018/04/24 15:48:33.372 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:48:33.3671474+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:48:33.372 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:48:33.3671474 +0800 CST [ }
+2018/04/24 15:48:33.372 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:48:33.3671474 +0800 CST [ }
+2018/04/24 15:48:33.373 [D] secLayerContext.Handle2WriteChan &{2000 3232 132d8c44b37b6035780f0a23f3dc6ea5 1524556113 1002}
+2018/04/24 15:48:33.373 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"132d8c44b37b6035780f0a23f3dc6ea5","token_time":1524556113,"code":1002}
+2018/04/24 15:49:24.668 [D] get config from etcd, PUT "/backend/secskill/product" : "[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524556164,\"end_time\":3029568564,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":50,\"buy_rate\":0.5,\"sold_max_limit\":100}]"
+
+2018/04/24 15:49:24.668 [D] get config from etcd succ, [{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524556164 3029568564 0 2000 1000 50 0.5 100 <nil>}]
+2018/04/24 15:49:24.668 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421e04b0 3000:0xc0421e0460]
+2018/04/24 15:49:31.544 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:49:31.5410534+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:49:31.544 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:49:31.5410534 +0800 CST [ }
+2018/04/24 15:49:31.544 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:49:31.5410534 +0800 CST [ }
+2018/04/24 15:49:42.824 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:49:42.8200275+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:49:42.824 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:49:42.8200275 +0800 CST [ }
+2018/04/24 15:49:42.824 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:49:42.8200275 +0800 CST [ }
+2018/04/24 15:49:54.580 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:49:54.5742629+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:49:54.580 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:49:54.5742629 +0800 CST [ }
+2018/04/24 15:49:54.581 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:49:54.5742629 +0800 CST [ }
+2018/04/24 15:50:33.834 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:50:33.8325902+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:50:33.834 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:50:33.8325902 +0800 CST [ }
+2018/04/24 15:50:33.834 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:50:33.8325902 +0800 CST [ }
+2018/04/24 15:50:58.217 [D] get config from etcd, PUT "/backend/secskill/product" : "[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524556258,\"end_time\":3029568658,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":50,\"buy_rate\":0.8,\"sold_max_limit\":100}]"
+
+2018/04/24 15:50:58.217 [D] get config from etcd succ, [{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524556258 3029568658 0 2000 1000 50 0.8 100 <nil>}]
+2018/04/24 15:51:04.129 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:51:04.1260966+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:51:04.130 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:04.1260966 +0800 CST [ }
+2018/04/24 15:51:04.130 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:04.1260966 +0800 CST [ }
+2018/04/24 15:51:16.596 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:51:16.5932244+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:51:16.596 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:16.5932244 +0800 CST [ }
+2018/04/24 15:51:16.596 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:16.5932244 +0800 CST [ }
+2018/04/24 15:51:28.127 [D] secLayerContext.Handle2WriteChan &{0 0  0 1005}
+2018/04/24 15:51:28.127 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1005}
+2018/04/24 15:51:28.136 [D] secLayerContext.Handle2WriteChan &{0 0  0 1005}
+2018/04/24 15:51:28.138 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1005}
+2018/04/24 15:51:28.143 [D] secLayerContext.Handle2WriteChan &{2000 3232 f05092bba715a44a45276f489de64137 1524556288 1002}
+2018/04/24 15:51:28.143 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"f05092bba715a44a45276f489de64137","token_time":1524556288,"code":1002}
+2018/04/24 15:51:28.151 [D] secLayerContext.Handle2WriteChan &{2000 3232 f05092bba715a44a45276f489de64137 1524556288 1002}
+2018/04/24 15:51:28.152 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[2000:0xc0421e0230 3000:0xc0421e01e0]
+2018/04/24 15:51:28.152 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"f05092bba715a44a45276f489de64137","token_time":1524556288,"code":1002}
+2018/04/24 15:51:28.165 [D] secLayerContext.Handle2WriteChan &{2000 3232 f05092bba715a44a45276f489de64137 1524556288 1002}
+2018/04/24 15:51:28.165 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"f05092bba715a44a45276f489de64137","token_time":1524556288,"code":1002}
+2018/04/24 15:51:28.177 [D] secLayerContext.Handle2WriteChan &{2000 3232 f05092bba715a44a45276f489de64137 1524556288 1002}
+2018/04/24 15:51:28.177 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"f05092bba715a44a45276f489de64137","token_time":1524556288,"code":1002}
+2018/04/24 15:51:30.912 [I] init logger success!!!
+2018/04/24 15:51:30.913 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 15:51:30.920 [D] init redis success!!
+2018/04/24 15:51:30.922 [D] init ectd success!!
+2018/04/24 15:51:30.922 [D] start from etcd read data
+2018/04/24 15:51:30.924 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1108 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1108 version:35 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524556258,\"end_time\":3029568658,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":50,\"buy_rate\":0.8,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 15:51:30.924 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1108 version:35 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524556258,\"end_time\":3029568658,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":50,\"buy_rate\":0.8,\"sold_max_limit\":100}]" ]
+2018/04/24 15:51:30.924 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524556258 3029568658 0 2000 1000 50 0.8 100 <nil>}]]
+2018/04/24 15:51:30.924 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[3000:0xc04207c870 2000:0xc04207c8c0]
+2018/04/24 15:51:30.924 [D] update  sec product info success
+2018/04/24 15:51:30.924 [D] init etcd watch success!!!
+2018/04/24 15:51:30.924 [D] init product success!!
+2018/04/24 15:51:30.928 [D] init all success!
+2018/04/24 15:51:30.929 [D] init layer succss
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.930 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.931 [D] handle write running
+2018/04/24 15:51:30.931 [D] handle write running
+2018/04/24 15:51:30.931 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] handle write running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] handle user running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:30.929 [D] read goroutine running
+2018/04/24 15:51:43.241 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:51:43.2387206+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:51:43.241 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:43.2387206 +0800 CST [ }
+2018/04/24 15:51:43.242 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:43.2387206 +0800 CST [ }
+2018/04/24 15:51:43.246 [D] secLayerContext.Handle2WriteChan &{2000 3232 b8c61c9081910e9dc37c339577e46e8d 1524556303 1002}
+2018/04/24 15:51:43.246 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"b8c61c9081910e9dc37c339577e46e8d","token_time":1524556303,"code":1002}
+2018/04/24 15:51:44.305 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:51:44.302557+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:51:44.305 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:44.302557 +0800 CST [ }
+2018/04/24 15:51:44.305 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:51:44.302557 +0800 CST [ }
+2018/04/24 15:51:44.309 [D] secLayerContext.Handle2WriteChan &{0 0  0 1005}
+2018/04/24 15:51:44.309 [D] secLayerContext.Handle2WriteChan {"product_id":0,"user_id":0,"token":"","token_time":0,"code":1005}
+2018/04/24 15:52:24.533 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T15:52:24.5274432+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 15:52:24.533 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:52:24.5274432 +0800 CST [ }
+2018/04/24 15:52:24.533 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 15:52:24.5274432 +0800 CST [ }
+2018/04/24 15:52:29.116 [D] secLayerContext.Handle2WriteChan &{2000 3232 8912fb530b3aaaad2d4412ea179ac895 1524556344 1002}
+2018/04/24 15:52:29.116 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"8912fb530b3aaaad2d4412ea179ac895","token_time":1524556344,"code":1002}
+2018/04/24 16:04:25.198 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T16:04:09.2408082+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 16:04:25.199 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 16:04:09.2408082 +0800 CST [ }
+2018/04/24 16:04:25.199 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 16:04:09.2408082 +0800 CST [ }
+2018/04/24 16:04:25.200 [D] secLayerContext.Handle2WriteChan &{2000 3232 27926791fe9aeb2307c6fa294d79f258 1524557065 1002}
+2018/04/24 16:04:25.200 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"27926791fe9aeb2307c6fa294d79f258","token_time":1524557065,"code":1002}
+2018/04/24 16:08:31.594 [D] pop from queue , data:[redis_proxy2layer_queue_name {"ProductId":2000,"Source":"android","AuthCode":"43453","SecTime":"4236424","Nance":"43434","UserId":3232,"UserAuthSign":"04354e1ff199361ce5dd97389b2faf6d","AccessTime":"2018-04-24T16:08:31.5849718+08:00","ClientAddr":"[","ClientRefence":""}],length=2
+2018/04/24 16:08:31.596 [D] pop from queue , req:{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 16:08:31.5849718 +0800 CST [ }
+2018/04/24 16:08:31.596 [D] begin process request:&{2000 android 43453 4236424 43434 3232 04354e1ff199361ce5dd97389b2faf6d 2018-04-24 16:08:31.5849718 +0800 CST [ }
+2018/04/24 16:09:39.250 [D] secLayerContext.Handle2WriteChan &{2000 3232 232d416209aeb7d9b94a74c7c50252fe 1524557311 1002}
+2018/04/24 16:09:39.250 [D] secLayerContext.Handle2WriteChan {"product_id":2000,"user_id":3232,"token":"232d416209aeb7d9b94a74c7c50252fe","token_time":1524557311,"code":1002}
+2018/04/24 16:09:40.855 [I] init logger success!!!
+2018/04/24 16:09:40.855 [I] {"LogLevel":"debug","LogPath":"./logs/seclayer.log","EtcdConfig":{"EtcdServiceAddr":"127.0.0.1:2379","EtcdSecKeyPrefix":"/backend/secskill/","EtcdProductKey":"/backend/secskill/product","EtcdBlackListKey":"/backend/secskill/backlist","EtcdTimeOut":10},"Proxy2LayerRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_proxy2layer_queue_name"},"Layer2ProxyRedis":{"RedisAddr":"127.0.0.1:6379","RedisMaxIdle":64,"RedisMaxActive":0,"RedisIdleTimeout":300,"RedisQueueName":"redis_layer2proxy_queue_name"},"WriteGoroutineNum":16,"ReadGoroutineNum":16,"HandleUserGoroutineNum":16,"Read2handleChanSize":100000,"Handle2WriteChanSize":100000,"MaxRequestWaitTimeout":30,"SendToWriteChanTimeout":100,"SendToHandleChanTimeout":100,"TokenPasswd":"fIOxU7iik65vVvBGtNcnrjL4E9MdRpTfzzxE3dx6b7BAHN5etUdSzRW5yjzHzFGW","SecProductInfoMap":null}
+2018/04/24 16:09:40.862 [D] init redis success!!
+2018/04/24 16:09:40.865 [D] init ectd success!!
+2018/04/24 16:09:40.865 [D] start from etcd read data
+2018/04/24 16:09:40.867 [D] get [/backend/secskill/product] from ectd success,resp:&{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:1108 raft_term:13  [key:"/backend/secskill/product" create_revision:1074 mod_revision:1108 version:35 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524556258,\"end_time\":3029568658,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":50,\"buy_rate\":0.8,\"sold_max_limit\":100}]" ] false 1}
+2018/04/24 16:09:40.867 [D] key[0],value[key:"/backend/secskill/product" create_revision:1074 mod_revision:1108 version:35 value:"[{\"product_id\":3000,\"start_time\":1524534841,\"end_time\":1524634841,\"status\":0,\"total\":1000,\"left\":1000,\"one_person_buy_limit\":1,\"buy_rate\":0.5,\"sold_max_limit\":100},{\"product_id\":2000,\"start_time\":1524556258,\"end_time\":3029568658,\"status\":0,\"total\":2000,\"left\":1000,\"one_person_buy_limit\":50,\"buy_rate\":0.8,\"sold_max_limit\":100}]" ]
+2018/04/24 16:09:40.867 [D] sec info conf is [[{3000 1524534841 1524634841 0 1000 1000 1 0.5 100 <nil>} {2000 1524556258 3029568658 0 2000 1000 50 0.8 100 <nil>}]]
+2018/04/24 16:09:40.867 [D] secLayerContext.secLayerConf.SecProductInfoMap : map[3000:0xc04206e9b0 2000:0xc04206ea00]
+2018/04/24 16:09:40.867 [D] update  sec product info success
+2018/04/24 16:09:40.867 [D] init etcd watch success!!!
+2018/04/24 16:09:40.867 [D] init product success!!
+2018/04/24 16:09:40.873 [D] init all success!
+2018/04/24 16:09:40.873 [D] init layer succss
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle write running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] read goroutine running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
+2018/04/24 16:09:40.873 [D] handle user running
