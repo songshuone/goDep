@@ -26,3 +26,8 @@ func (p *ProductModel) CreateProduct(product *Product) (err error) {
 	logs.Debug("create product success")
 	return
 }
+
+func (p *ProductModel) GetProductList() (product []*Product, err error) {
+	err = Db.Find(&product).Error
+	return
+}

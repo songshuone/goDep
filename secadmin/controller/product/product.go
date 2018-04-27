@@ -11,6 +11,24 @@ type ProductController struct {
 	beego.Controller
 }
 
+func (p *ProductController) CreateProduct() {
+	p.TplName = "product/create.html"
+	p.Layout = "layout/layout.html"
+}
+
+func (p *ProductController) ListProduct() {
+	productModel := model.NewProductModel()
+
+	productList, err := productModel.GetProductList()
+	if err != nil {
+		logs.Warn("get product list failed,err:%v", err)
+		return
+	}
+	p.Data["product_list"] = productList
+	p.TplName = "product/list.html"
+	p.Layout = "layout/layout.html"
+}
+
 func (c *ProductController) SubmitProduct() {
 
 	productName := c.GetString("product_name")

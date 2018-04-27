@@ -26,5 +26,9 @@ func CreateTable() (err error) {
 	if err != nil {
 		return err
 	}
+	err = Db.CreateTable(new(Activity)).Error
+	if err != nil {
+		return err
+	}
 	return
 }

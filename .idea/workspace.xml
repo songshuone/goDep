@@ -3,511 +3,8 @@
   <component name="ChangeListManager">
     <list id="b3bdba5b-b532-4541-8612-b69167962f38" name="Revert &quot;增加秒杀逻辑层&quot;" comment="Revert &quot;增加秒杀逻辑层&quot;&#10;&#10;This reverts commit 7860f8f" />
     <list default="true" id="f4bf88ab-72ad-4fbd-93ec-9c2f0eb84115" name="Default" comment="Revert &quot;增加秒杀逻辑层&quot;&#10;&#10;This reverts commit 7860f8fbef3d5257cf65839eb94ea2ced14abdeb.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/controller/product/product.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/main/config.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/main/init.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/main/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/model/db.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/model/product.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/router/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/DT_bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/about-us.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/animate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/blog.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/blue.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-fileupload.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-modal.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-responsive.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-responsive1.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-tag.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-toggle-buttons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-tree.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap-wysihtml5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/brown.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/chosen.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/clockface.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/colorpicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/coming-soon.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/datepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/daterangepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/datetimepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/default.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/dropzone.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/email.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/error.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/font-awesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/fullcalendar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/glyphicons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/grey.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/halflings.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/inbox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/invoice.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery-ui-1.10.1.custom.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.easy-pie-chart.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.fancybox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.fileupload-ui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.gritter.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.nestable.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.tagsinput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jquery.ui.slider.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/jqvmap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/light.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/lock.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/login-soft.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/login.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/multi-select-metro.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/news.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/pricing-tables.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/print.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/profile.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/promo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/purple.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/search.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/select2_metro.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/style-metro.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/style-non-responsive.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/style-responsive.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/timeline.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/timepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/css/uniform.default.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/10.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/11.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/KwPYo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/alpha.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/amazon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/animated-overlay.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/avatar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/avatar1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/avatar1_small.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/avatar2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/avatar3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/behance.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg-input-focus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg-input.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg-opacity.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg-white-lock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bg/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/blank.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/blogger.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/bstree-halflings.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/chosen-sprite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/datatable-row-openclose.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/deviantart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/dribbble.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/dropbox.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/earth.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/evernote.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/facebook.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fancybox_loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fancybox_overlay.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fancybox_sprite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/forrst.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/github.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-halflings-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-halflings.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons_halflings-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons_halflings-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons_halflings.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphicons_halflings.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphiconshalflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphiconshalflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphiconshalflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/glyphiconshalflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/googleplus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/gritter-light.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/gritter.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/hor-menu-search-close-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/hor-menu-search-close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/hor-menu-search.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/hue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/icon-color-close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/icon-color.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/icon-img-down.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/icon-img-up.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ie-spacer.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/image1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/image2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/image3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/image4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/image5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/img1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/img1_2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/img2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/img3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/img4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/inbox-nav-arrow-blue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/instagram.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/iphone.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/item_img.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/item_img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/jolicloud.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/last-fm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/linkedin.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/logo-big.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/logo_azteca.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/logo_conquer.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/logo_metronic.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/menu-toggler.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/overlay-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/photo1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/photo2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/photo3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/photo4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/photo5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/photo6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/picasa.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/pintrest.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-collapse-icon-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-collapse-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-config-icon-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-config-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-expand-icon-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-expand-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-reload-icon-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-reload-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-remove-icon-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/portlet-remove-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_03.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_04.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_05.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_06.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_07.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_08.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_09.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_11.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_12.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_13.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_14.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_15.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_16.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/preview_17.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/profile-img.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/profile.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/progressbar.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/remove-icon-small.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/rss.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/saturation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/search-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/select2-spinner.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/select2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/select2x2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sidebar-menu-arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sidebar-search-close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sidebar-toggler.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/skype.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/social_facebook.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/social_googleplus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/social_linkedin.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/social_rss.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/social_twitter.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sort_asc.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sort_asc_disabled.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sort_both.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sort_desc.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sort_desc_disabled.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/spotify.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/sprite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/spritemap.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/spritemap@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/stumbleupon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/switch.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/syncfusion-icons-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/syncfusion-icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/tumblr.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/twitter.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_flat_10_000000_40x100.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_glass_65_ffffff_1x400.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-icons_222222_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-icons_228ef1_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-icons_888888_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-icons_ef8c08_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-icons_ffd27a_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/ui-icons_ffffff_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/vimeo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/vk.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/walmart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/wordpress.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/xing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/yahoo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/image/youtube.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/DT_bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/additional-methods.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-colorpicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-datepicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-datetimepicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-fileupload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-modal.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-modalmanager.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-rtl.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-tag.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-timepicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap-wysihtml5.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/breakpoints.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/breakpoints.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/calendar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/canvas-to-blob.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/charts.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/chosen.jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ckeditor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/clockface.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/coming-soon.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/contact-us.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/date.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/daterangepicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/dropzone.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/excanvas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/excanvas.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/form-components.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/form-fileupload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/form-samples.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/form-validation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/form-wizard.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/fullcalendar.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/gallery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/gmaps.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/inbox.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery-1.10.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery-1.8.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery-migrate-1.2.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery-ui-1.10.1.custom.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.backstretch.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.blockui.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.bootpag.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.bootstrap.wizard.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.cookie.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.countdown.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.dataTables.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.dataTables.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.easy-pie-chart.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.fancybox.pack.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.fileupload-fp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.fileupload-ui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.fileupload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.flot.crosshair.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.flot.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.flot.pie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.flot.resize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.flot.stack.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.gritter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.iframe-transport.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.input-ip-address-control-1.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.inputmask.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.knob.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.multi-select.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.nestable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.pulsate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.slimscroll.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.sparkline.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.tagsinput.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.toggle.buttons.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.ui.widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.uniform.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.validate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.europe.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.germany.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.russia.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.sampledata.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.usa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.vmap.world.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/jquery.xdr-transport.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/load-image.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/lock.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/login-soft.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/login.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/maps-google.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/maps-vector.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/portlet-draggable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/respond.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/respond.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/search.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/select2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/table-advanced.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/table-editable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/table-managed.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/tmpl.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ui-general.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ui-jqueryui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ui-modals.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ui-nestable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ui-sliders.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/ui-tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/static/js/wysihtml5-0.3.0.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/activity/create.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/activity/error.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/activity/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/layout/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/layout/layout_blank_page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/product/create.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/product/error.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/product/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/source.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/charts.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/email1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/email2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/email3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/email4.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/email5.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/email6.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_404_option1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_404_option2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_404_option3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_500_option1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_500_option2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_faq.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_image_manager.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_invoice.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_lock.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_pricing_table.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_profile.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/extra_search.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_component.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_dropzone.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_fileupload.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_samples.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_validation.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/form_wizard.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/inbox.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/inbox_inbox.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_ajax.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_ajax_content_2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_ajax_content_3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_blank_page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_boxed_not_responsive.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_boxed_page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_email.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_horizontal_menu1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_horizontal_menu2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_horizontal_sidebar_menu.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_promo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/layout_sidebar_closed.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/login_soft.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/maps_google.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/maps_vector.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/DT_bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/about-us.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/animate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/blog.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/blue.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-fileupload.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-modal.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-responsive.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-responsive1.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-tag.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-toggle-buttons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-tree.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap-wysihtml5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/brown.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/chosen.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/clockface.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/colorpicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/coming-soon.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/datepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/daterangepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/datetimepicker.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/default.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/dropzone.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/email.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/error.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/font-awesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/fullcalendar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/glyphicons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/grey.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/halflings.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/inbox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/invoice.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/views/theme/media/css/jquery-ui-1.10.1.custom.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/.github/ISSUE_TEMPLATE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/.github/PULL_REQUEST_TEMPLATE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/.travis/docker.cnf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/.travis/wait_mysql.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/AUTHORS" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/CONTRIBUTING.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/appengine.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/benchmark_go18_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/benchmark_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/buffer.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/collations.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/connection.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/connection_go18.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/connection_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/const.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/driver.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/driver_go18_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/driver_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/dsn.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/dsn_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/errors.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/errors_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/fields.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/infile.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/packets.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/packets_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/result.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/rows.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/statement.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/transaction.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils_go17.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils_go18.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils_go18_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils_legacy.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/controller/activity/activity.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secadmin/model/activity.go" />
       <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/jmoiron/sqlx/.gitignore" />
       <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/jmoiron/sqlx/.travis.yml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/jmoiron/sqlx/LICENSE" />
@@ -529,6 +26,11 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/jmoiron/sqlx/types/types.go" />
       <change beforePath="" afterPath="$PROJECT_DIR$/vendor/github.com/jmoiron/sqlx/types/types_test.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/secadmin/controller/product/product.go" afterPath="$PROJECT_DIR$/secadmin/controller/product/product.go" />
+      <change beforePath="$PROJECT_DIR$/secadmin/model/db.go" afterPath="$PROJECT_DIR$/secadmin/model/db.go" />
+      <change beforePath="$PROJECT_DIR$/secadmin/model/product.go" afterPath="$PROJECT_DIR$/secadmin/model/product.go" />
+      <change beforePath="$PROJECT_DIR$/secadmin/router/router.go" afterPath="$PROJECT_DIR$/secadmin/router/router.go" />
+      <change beforePath="$PROJECT_DIR$/secadmin/views/product/list.html" afterPath="$PROJECT_DIR$/secadmin/views/product/list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -542,14 +44,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/model/product.go">
+      <file leaf-file-name="create.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secadmin/views/activity/create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="e#15#58#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="76" column="82" lean-forward="false" selection-start-line="76" selection-start-column="69" selection-end-line="76" selection-end-column="82" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -557,35 +57,31 @@
       <file leaf-file-name="db.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secadmin/model/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="395">
+              <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/secadmin/controller/activity/activity.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
               <folding>
-                <element signature="e#15#98#0" expanded="true" />
+                <element signature="e#18#113#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/main/init.go">
+      <file leaf-file-name="activity.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secadmin/model/activity.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-621">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="e#14#205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/main/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding>
-                <element signature="e#14#112#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -593,65 +89,9 @@
       <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secadmin/router/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/secadmin/views/product/create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/controller/product/product.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-              <folding>
-                <element signature="e#17#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/conf/app.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/views/product/error.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="78" column="10" lean-forward="false" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secadmin/main/config.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#103#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -704,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.jgo.go" />
         <option value="$PROJECT_DIR$/src/main.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/skcproxy/router/router.go" />
@@ -745,14 +184,17 @@
         <option value="$PROJECT_DIR$/skcproxy/service/redis_proc.go" />
         <option value="$PROJECT_DIR$/skcproxy/tools/setconf/main.go" />
         <option value="$PROJECT_DIR$/secadmin/controller/product.go" />
-        <option value="$PROJECT_DIR$/secadmin/controller/product/product.go" />
         <option value="$PROJECT_DIR$/secadmin/main/config.go" />
         <option value="$PROJECT_DIR$/secadmin/conf/app.conf" />
         <option value="$PROJECT_DIR$/secadmin/main/init.go" />
         <option value="$PROJECT_DIR$/secadmin/main/main.go" />
-        <option value="$PROJECT_DIR$/secadmin/model/db.go" />
         <option value="$PROJECT_DIR$/secadmin/model/product.go" />
+        <option value="$PROJECT_DIR$/secadmin/views/product/list.html" />
+        <option value="$PROJECT_DIR$/secadmin/controller/product/product.go" />
         <option value="$PROJECT_DIR$/secadmin/router/router.go" />
+        <option value="$PROJECT_DIR$/secadmin/model/db.go" />
+        <option value="$PROJECT_DIR$/secadmin/controller/activity/activity.go" />
+        <option value="$PROJECT_DIR$/secadmin/model/activity.go" />
       </list>
     </option>
   </component>
@@ -763,8 +205,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="640" />
-    <option name="y" value="45" />
+    <option name="x" value="83" />
+    <option name="y" value="356" />
     <option name="width" value="1382" />
     <option name="height" value="758" />
   </component>
@@ -784,8 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -804,12 +244,57 @@
               <item name="secadmin" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="secadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="secadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="secadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="secadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="secadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="skcproxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goDep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goDep" type="462c0819:PsiDirectoryNode" />
+              <item name="skcproxy" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -993,7 +478,8 @@
       <workItem from="1524218963584" duration="1178000" />
       <workItem from="1524447277075" duration="22237000" />
       <workItem from="1524533064727" duration="14300000" />
-      <workItem from="1524622247986" duration="15979000" />
+      <workItem from="1524622247986" duration="16641000" />
+      <workItem from="1524796152433" duration="6148000" />
     </task>
     <task id="LOCAL-00001" summary="修改bug   增加获取秒杀的商品信息">
       <created>1523957922374</created>
@@ -1044,11 +530,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524560170793</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加后台管理添加活动">
+      <created>1524645768848</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524645768849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129150000" />
+    <option name="totallyTimeSpent" value="135960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1062,12 +555,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036308624" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="544" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.017152658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2212693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44520548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.55060035" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.55060035" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1138,27 +631,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/skcproxy/main/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skcproxy/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skcproxy/tools/setconf/setredis.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/github.com/garyburd/redigo/redis/reply.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1187,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skcproxy/service/product.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skclayer/main/config.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -1219,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="76" column="40" lean-forward="false" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1298,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1273">
           <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1539">
           <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,15 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skcproxy/service/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1634">
-          <caret line="90" column="24" lean-forward="false" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,15 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/views/activity/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1354,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1287">
           <caret line="403" column="48" lean-forward="false" selection-start-line="403" selection-start-column="41" selection-end-line="403" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1362,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1378,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1402,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,9 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#16#66#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,23 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="37" column="95" lean-forward="false" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/views/layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/views/activity/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,86 +873,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secadmin/views/product/error.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="1482">
           <caret line="78" column="10" lean-forward="false" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/controller/product/product.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-          <folding>
-            <element signature="e#17#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/secadmin/main/config.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="741">
           <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
-            <element signature="e#14#103#0" expanded="true" />
+            <element signature="e#14#103#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secadmin/main/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="95">
           <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
-            <element signature="e#14#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/model/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/model/product.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#58#0" expanded="true" />
+            <element signature="e#14#112#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secadmin/main/init.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="171">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="e#14#205#0" expanded="true" />
+            <element signature="e#14#205#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secadmin/router/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secadmin/views/product/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="437">
+          <caret line="66" column="50" lean-forward="false" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/views/layout/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5130">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/views/product/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/controller/product/product.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#17#119#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skcproxy/service/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skcproxy/service/product.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/model/product.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#58#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/views/activity/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="80" column="46" lean-forward="false" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/views/activity/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="76" column="82" lean-forward="false" selection-start-line="76" selection-start-column="69" selection-end-line="76" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/router/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/model/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/model/activity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secadmin/controller/activity/activity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="e#18#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
