@@ -92,7 +92,7 @@ func initConfig() (err error) {
 	}
 	AppConf.etcdConf.Addr = etcdAddr
 	AppConf.etcdConf.EtcdKeyPrefix = etcdKeyPrefix
-	AppConf.etcdConf.ProductKey = fmt.Sprintln(AppConf.etcdConf.EtcdKeyPrefix, etcdProductKey)
+	AppConf.etcdConf.ProductKey = fmt.Sprintf("%s%s",AppConf.etcdConf.EtcdKeyPrefix, etcdProductKey)
 	AppConf.etcdConf.Timeout = etcdTimeout
 
 	logs.Debug("init config succ")

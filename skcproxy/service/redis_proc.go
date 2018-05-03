@@ -48,7 +48,7 @@ func ReadHandle() {
 		var result SecResult
 		err = json.Unmarshal([]byte(data), &result)
 
-		logs.Debug("result", result)
+		//logs.Debug("result", result)
 		if os.IsExist(err) {
 			logs.Error("json Unmarshal failed,err:%v", err)
 			conn.Close()

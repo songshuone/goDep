@@ -62,7 +62,7 @@ func initAll() (err error) {
 		return
 	}
 
-	err = model.Init(Db, EtcdClient, AppConf.etcdConf.EtcdKeyPrefix, AppConf.etcdConf.ProductKey)
+	err = model.Init(Db, EtcdClient,  AppConf.etcdConf.ProductKey,AppConf.etcdConf.EtcdKeyPrefix)
 	if err != nil {
 		logs.Error("init  model failed, err:%s", err)
 		return
